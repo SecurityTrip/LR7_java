@@ -15,7 +15,7 @@ public class TabulatedFunctionDoc implements TabulatedFunction {
 
     public void newFunction(double leftX, double rightX, int pointsCount) throws InappropriateFunctionPointException {
 
-        tabulatedFunction = TabulatedFunctions.createTabulatedFunction(leftX, rightX, pointsCount);
+        tabulatedFunction = new ArrayTabulatedFunction(leftX, rightX, pointsCount);
         modified = true;
 
     }

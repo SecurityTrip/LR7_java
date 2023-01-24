@@ -7,22 +7,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class ArrayTabulatedFunction implements TabulatedFunction {
-
-    public static class ArrayTabulatedFunctionFactory implements TabulatedFunctionFactory {
-
-        public TabulatedFunction createTabulatedFunction(double leftX, double rightX, int pointsCount) throws InappropriateFunctionPointException {
-            return new ArrayTabulatedFunction(leftX, rightX, pointsCount);
-        }
-
-        public TabulatedFunction createTabulatedFunction(double leftX, double rightX, double[] values) throws InappropriateFunctionPointException {
-            return new ArrayTabulatedFunction(leftX, rightX, values);
-        }
-
-        public TabulatedFunction createTabulatedFunction(FunctionPoint[] points) throws InappropriateFunctionPointException {
-            return new ArrayTabulatedFunction(points);
-        }
-
-    }
+    
 
     final static int ARRAY_RESERVE = 32;
     private int pointsCount = 0;

@@ -8,22 +8,6 @@ import java.util.NoSuchElementException;
 
 public class LinkedListTabulatedFunction implements TabulatedFunction {
 
-    public static class LinkedListTabulatedFunctionFactory implements TabulatedFunctionFactory {
-
-        public TabulatedFunction createTabulatedFunction(double leftX, double rightX, int pointsCount) throws InappropriateFunctionPointException {
-            return new LinkedListTabulatedFunction(leftX, rightX, pointsCount);
-        }
-
-        public TabulatedFunction createTabulatedFunction(double leftX, double rightX, double[] values) throws InappropriateFunctionPointException {
-            return new LinkedListTabulatedFunction(leftX, rightX, values);
-        }
-
-        public TabulatedFunction createTabulatedFunction(FunctionPoint[] points) throws InappropriateFunctionPointException {
-            return new LinkedListTabulatedFunction(points);
-        }
-
-    }
-
     private static class FunctionNode {
 
         private FunctionPoint point;

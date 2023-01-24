@@ -12,9 +12,10 @@ public class Main {
     public static void main(String[] args) throws InappropriateFunctionPointException {
 
         try {
-            //complicatedThreads();
-            //simpleThreads();
-            //nonThread();
+            complicatedThreads();
+            simpleThreads();
+            nonThread();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
